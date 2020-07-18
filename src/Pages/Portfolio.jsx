@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Col, Container, Nav, Row, Tab} from "react-bootstrap";
+import {Button, Col, Container, Nav, Row, Tab} from "react-bootstrap";
 import P1 from '../assets/Portfolio.png'
 import P2 from '../assets/Portfolio1.png'
 import P3 from '../assets/Portfolio2.png'
@@ -10,11 +10,11 @@ import P4 from '../assets/Portfolio3.png'
 class About extends Component {
     render() {
         return (
-            <Container>
+            <Container >
                 <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
                     <Row>
                         <Col sm={3}>
-                            <Nav variant='pills' className='flex-column mt-2'>
+                            <Nav variant='pills' className='flex-column mt-2' >
                                 <Nav.Item>
                                     <Nav.Link eventKey='first'>Блог</Nav.Link>
                                 </Nav.Item>
@@ -30,31 +30,40 @@ class About extends Component {
                             </Nav>
                         </Col>
                         <Col sm={9}>
-                            <Tab.Content className='mt-3' >
-                                <Tab.Pane eventKey='first'>
-                                    <img src={P1}
+                            <Tab.Content className='mt-3 text-center ' >
+                                <Tab.Pane eventKey='first' >
+                                    <img className='rounded-lg shadow'
+                                         src={P1}
                                          width={800}
                                     />
-                                    <p>Блог на ReactJS + Bootstrap
-                                    </p>
+                                    <h5 className='mt-3 text-center' >Простой блог на ReactJS + Bootstrap</h5>
+                                    <a href='https://github.com/itmrgodsend/ReactBlog' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='second'>
-                                    <img src={P2}
+                                    <img className='rounded-lg shadow'
+                                         src={P2}
                                          width={800}
                                     />
-                                    <p>React + Bootstrap Приложение с помощью API возвращает погоду в выбранном вами городе.</p>
+                                    <h5 className='mt-3 text-center' >React + Bootstrap Приложение с помощью API возвращает погоду в выбранном вами городе.</h5>
+                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/weatherReact'> Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='third'>
-                                    <img src={P3}
+                                    <img className='rounded-lg shadow'
+                                         src={P3}
                                          width={800}
                                     />
-                                    <p>Калькулятор на чистом JavaScript, + чистые HTML & CSS</p>
+                                    <h5 className='mt-3 text-center' >Калькулятор на чистом JavaScript + HTML & CSS.</h5>
+                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/CalculatorJS'> Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='fifth'>
-                                    <img src={P4}
+                                    <img className='rounded-lg shadow'
+                                         src={P4}
                                          width={800}
                                     />
-                                    <p>Калькулятор калорий на ReactJS</p>
+                                    <h5 className='mt-3 text-center'>Калькулятор калорий на ReactJS. Умеет считать несколько продуктов, суммирует калории, граммы. Алгоритм написан на JS.
+                                        https://github.com/itmrgodsend/ReactFit
+                                    </h5>
+                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/ReactFit'> Репозиторий </a>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Col>
