@@ -10,7 +10,7 @@ import P4 from '../assets/Portfolio3.png'
 class About extends Component {
     render() {
         return (
-            <Container >
+            <Container>
                 <Tab.Container id='left-tabs-example' defaultActiveKey='first'>
                     <Row>
                         <Col sm={3}>
@@ -60,9 +60,7 @@ class About extends Component {
                                          src={P4}
                                          width={800}
                                     />
-                                    <h5 className='mt-3 text-center'>Калькулятор калорий на ReactJS. Умеет считать несколько продуктов, суммирует калории, граммы. Алгоритм написан на JS.
-                                        https://github.com/itmrgodsend/ReactFit
-                                    </h5>
+                                    <h5 className='mt-3 text-center'>Калькулятор калорий на ReactJS. Умеет считать несколько продуктов, суммирует калории, граммы. Алгоритм написан на JS.</h5>
                                     <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/ReactFit'> Репозиторий </a>
                                 </Tab.Pane>
                             </Tab.Content>

@@ -5,6 +5,7 @@ import {Route, Switch, BrowserRouter} from "react-router-dom";
 import Home from "../Pages/Home";
 import About from "../Pages/About";
 import Portfolio from "../Pages/Portfolio";
+import Contacts from "../Pages/Contacts";
 
 
 class Header extends Component {
@@ -24,7 +25,6 @@ class Header extends Component {
                         <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
                         <Navbar.Collapse id='responsive-navbar-nav'>
                             <Nav className='mr-auto'>
-                                <Nav.Link href='/'>Home</Nav.Link>
                                 <Nav.Link href='/about'>About me</Nav.Link>
                                 <Nav.Link href='/contacts'>Contacts</Nav.Link>
                                 <Nav.Link href='/portfolio'>My portfolio</Nav.Link>
@@ -35,10 +35,10 @@ class Header extends Component {
 
                 <BrowserRouter>
                     <Switch>
-                        <Route exact path='/' component={Home}/>
-                        <Route  path='/about' component={About}/>
+
+                        <Route exact path='/about' component={About}/>
                         <Route  path='/portfolio' component={Portfolio}/>
-                        {/*<Route  path='/blog' component={Blog}/>*/}
+                        <Route  path='/contacts' component={Contacts}/>
                     </Switch>
                 </BrowserRouter>
             </div>
