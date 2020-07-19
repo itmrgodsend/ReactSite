@@ -37,7 +37,7 @@ const About = () => {
             </Row>
             <Row >
                 <Col className='text-center'>
-                    <h5 className='text-center m-4'>Мой стек :</h5>
+                    <h5 className='text-center m-3'>Stack</h5>
                     <img
                         className='anim m-3 rounded m-4'
                         width={50}
