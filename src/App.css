@@ -3,11 +3,11 @@
     float: left;
 }
 
-.grayscale {
+.anim {
     filter: grayscale(1);
     transition: 1s;
 }
-.grayscale:hover {
+.anim:hover {
     filter: grayscale(0);
     transform:scale(1.5);
 }
