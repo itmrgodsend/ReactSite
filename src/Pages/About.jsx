@@ -9,15 +9,18 @@ import StackImg6 from '../assets/Stack/6.png'
 import StackImg7 from '../assets/Stack/7.png'
 import StackImg8 from '../assets/Stack/8.png'
 import StackImg9 from '../assets/Stack/9.png'
-
-
+import {FileIcon} from '@primer/octicons-react'
+import {RocketIcon } from '@primer/octicons-react'
+import {BriefcaseIcon } from '@primer/octicons-react'
 const About = () => {
     return (
         <Container>
             <Row>
                 <Col>
-                    <Card className='m-3 shadow-sm'>
+                    <Card className='m-3 shadow-sm border-0'>
                         <Card.Body>
+                            <FileIcon size={24}  verticalAlign='middle' />
+
                             <Card.Title className='text-center '>Привет, меня зовут Сергей и я Frontend developer</Card.Title>
                             <p className='text-left'>&nbsp;&nbsp;Раньше программировал на JS в свободное от работы время, год назад
                                 сменил
@@ -38,8 +41,9 @@ const About = () => {
                         </Card.Body>
                     </Card>
 
-                    <Card className='m-3 shadow-sm'>
+                    <Card className='m-3 shadow-sm border-0'>
                         <Card.Body>
+                            <RocketIcon  size={24}  verticalAlign='middle' />
                             <Card.Title className='text-center m-3'>План развития на год / Personal Devmap</Card.Title>
                             <ul>
                                 <li>Дорасти до middle позиции</li>
@@ -49,8 +53,9 @@ const About = () => {
                             </ul>
                         </Card.Body>
                     </Card>
-                    <Card className='m-3 shadow-sm'>
+                    <Card className='m-3 shadow-sm border-0'>
                         <Card.Body>
+                            <BriefcaseIcon  size={24}  verticalAlign='middle' />
                             <Row>
                                 <Col className='text-center'>
                                     <h5 className='text-center m-3'>My stack</h5>
