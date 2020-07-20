@@ -16,7 +16,9 @@
     background: #f8f8f8;
     color: #363636;
 }
-a {
-    text-decoration: none !important;
+.link {
+
     color: #363636 !important;;
 }
+
+

@@ -10,17 +10,16 @@ const Contacts = () => {
             <ListGroup className='m-5'>
                 <ListGroup.Item className='m-2 rounded border-0'>
                     <MentionIcon  size={24}  verticalAlign='middle' />
-                    &nbsp;Email&nbsp;&nbsp; — &nbsp;&nbsp;<b>itmrgodsend@gmail.com</b>&nbsp;&nbsp; <em>(предпочитаемый способ связи)</em>
+                    <b className='ml-3'>itmrgodsend@gmail.com</b>&nbsp;&nbsp; <em>(предпочитаемый способ связи)</em>
                 </ListGroup.Item>
                 <ListGroup.Item className='m-2 rounded border-0'>
                     <OctofaceIcon   size={24}  verticalAlign='middle' />
-                     <a href='https://github.com/itmrgodsend'>&nbsp;&nbsp;&nbsp;<b>GitHub</b></a>
+                     <a className='link ml-3' href='https://github.com/itmrgodsend'><b>GitHub</b></a>
                 </ListGroup.Item>
                 <ListGroup.Item className='m-2 rounded border-0'>
                     <OrganizationIcon    size={24}  verticalAlign='middle' />
-                    <a href='https://hh.ru/resume/9461f0b5ff07ddfc060039ed1f73677864714b'>&nbsp;&nbsp;&nbsp;<b>HeadHunter</b></a>
+                    <a className='link ml-3' href='https://hh.ru/resume/9461f0b5ff07ddfc060039ed1f73677864714b'><b>HeadHunter</b></a>
                 </ListGroup.Item>
-                <ListGroup.Item  className='m-2 rounded border-0 '></ListGroup.Item>
             </ListGroup>
         </Container>
     );
