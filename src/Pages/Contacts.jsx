@@ -14,13 +14,13 @@ const Contacts = () => {
                 </ListGroup.Item>
                 <ListGroup.Item className='m-2 rounded border-0'>
                     <OctofaceIcon   size={24}  verticalAlign='middle' />
-                    &nbsp;GitHub&nbsp;&nbsp;  — &nbsp;&nbsp; <b>github.com/itmrgodsend</b>
+                     <a href='https://github.com/itmrgodsend'>&nbsp;&nbsp;&nbsp;<b>GitHub</b></a>
                 </ListGroup.Item>
                 <ListGroup.Item className='m-2 rounded border-0'>
                     <OrganizationIcon    size={24}  verticalAlign='middle' />
-                    <a href='https://hh.ru/resume/9461f0b5ff07ddfc060039ed1f73677864714b'>HeadHunter</a>
+                    <a href='https://hh.ru/resume/9461f0b5ff07ddfc060039ed1f73677864714b'>&nbsp;&nbsp;&nbsp;<b>HeadHunter</b></a>
                 </ListGroup.Item>
-                <ListGroup.Item className='m-2 rounded border-0'></ListGroup.Item>
+                <ListGroup.Item  className='m-2 rounded border-0 '></ListGroup.Item>
             </ListGroup>
         </Container>
     );
