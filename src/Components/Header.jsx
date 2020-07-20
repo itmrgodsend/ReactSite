@@ -25,7 +25,7 @@ class Header extends Component {
                         <Navbar.Toggle aria-controls='responsive-navbar-nav'/>
                         <Navbar.Collapse id='responsive-navbar-nav'>
                             <Nav className='mr-auto'>
-                                <Nav.Link href='/about'>About me</Nav.Link>
+                                <Nav.Link href='/'>About me</Nav.Link>
                                 <Nav.Link href='/contacts'>Contacts</Nav.Link>
                                 <Nav.Link href='/portfolio'>My portfolio</Nav.Link>
                             </Nav>
@@ -36,7 +36,7 @@ class Header extends Component {
                 <BrowserRouter>
                     <Switch>
 
-                        <Route exact path='/about' component={About}/>
+                        <Route exact path='/' component={About}/>
                         <Route  path='/portfolio' component={Portfolio}/>
                         <Route  path='/contacts' component={Contacts}/>
                     </Switch>
