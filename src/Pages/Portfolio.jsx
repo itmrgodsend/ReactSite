@@ -5,6 +5,8 @@ import P1 from '../assets/Portfolio.png'
 import P2 from '../assets/Portfolio1.png'
 import P3 from '../assets/Portfolio2.png'
 import P4 from '../assets/Portfolio3.png'
+import P5 from '../assets/Portfolio4.png'
+import P6 from '../assets/Portfolio5.png'
 
 
 class About extends Component {
@@ -27,6 +29,12 @@ class About extends Component {
                                 <Nav.Item>
                                     <Nav.Link eventKey='fifth'>Калькулятор калорий на ReactJS</Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey='six'>Конвертер и курс валют на ReactJS</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey='seven'>ReactJS "Помидор"</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                         </Col>
                         <Col sm={9}>
@@ -36,7 +44,7 @@ class About extends Component {
                                          src={P1}
                                          width={800}
                                     />
-                                    <h5 className='mt-3 text-center' >Простой блог на ReactJS + Bootstrap</h5>
+                                    <h5 className='mt-3 text-center' >Простой блог на ReactJS + Bootstrap.</h5>
                                     <a href='https://github.com/itmrgodsend/ReactBlog' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='second'>
@@ -62,6 +70,22 @@ class About extends Component {
                                     />
                                     <h5 className='mt-3 text-center'>Калькулятор калорий на ReactJS. Умеет считать несколько продуктов, суммирует калории, граммы. Алгоритм написан на JS.</h5>
                                     <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/ReactFit'> Репозиторий </a>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='six' >
+                                    <img className='rounded-lg shadow'
+                                         src={P5}
+                                         width={800}
+                                    />
+                                    <h5 className='mt-3 text-center' >Конвертер и курс валют на ReactJS, приложение получает данные с помощью API.</h5>
+                                    <a href='https://github.com/itmrgodsend/ReactSite' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='seven' >
+                                    <img className='rounded-lg shadow'
+                                         src={P6}
+                                         width={800}
+                                    />
+                                    <h5 className='mt-3 text-center' >React "Помидор" - приложение для тайм менеджмента, с помощью него задачи дробятся по 25 минут и 5 минут отдыха. Сопровождается красивыми аудио и визуальными алертами.</h5>
+                                    <a href='https://github.com/itmrgodsend/ReactPomodoro' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Col>
