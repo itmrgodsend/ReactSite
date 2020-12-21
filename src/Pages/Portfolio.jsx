@@ -7,6 +7,9 @@ import P3 from '../assets/Portfolio2.png'
 import P4 from '../assets/Portfolio3.png'
 import P5 from '../assets/Portfolio4.png'
 import P6 from '../assets/Portfolio5.png'
+import P7 from '../assets/Portfolio6.png'
+import P8 from '../assets/Portfolio7.png'
+import P9 from '../assets/Portfolio8.png'
 
 
 class About extends Component {
@@ -18,10 +21,10 @@ class About extends Component {
                         <Col sm={3}>
                             <Nav variant='pills' className='flex-column mt-2' >
                                 <Nav.Item>
-                                    <Nav.Link eventKey='first'>Блог</Nav.Link>
+                                    <Nav.Link eventKey='first'>Список дел React/Redux</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
-                                    <Nav.Link eventKey='second'>Погода API</Nav.Link>
+                                    <Nav.Link eventKey='second'>Деловая таблица React/Redux</Nav.Link>
                                 </Nav.Item>
                                 <Nav.Item>
                                     <Nav.Link eventKey='third'>Калькулятор на чистом JavaScript</Nav.Link>
@@ -35,25 +38,31 @@ class About extends Component {
                                 <Nav.Item>
                                     <Nav.Link eventKey='seven'>ReactJS "Помидор"</Nav.Link>
                                 </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey='eight'>ReactJS "Погода"</Nav.Link>
+                                </Nav.Item>
+                                <Nav.Item>
+                                    <Nav.Link eventKey='nine'>2D игра на чистом JavaScript</Nav.Link>
+                                </Nav.Item>
                             </Nav>
                         </Col>
                         <Col sm={9}>
                             <Tab.Content className='mt-3 text-center ' >
                                 <Tab.Pane eventKey='first' >
                                     <img className='rounded-lg shadow'
-                                         src={P1}
+                                         src={P7}
                                          width={800}
                                     />
-                                    <h5 className='mt-3 text-center' >Простой блог на ReactJS + Bootstrap.</h5>
-                                    <a href='https://github.com/itmrgodsend/ReactBlog' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
+                                    <h5 className='mt-3 text-center' >Список дел (Todo List) на React + Redux.</h5>
+                                    <a href='https://github.com/itmrgodsend/ReactTodoApp' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='second'>
                                     <img className='rounded-lg shadow'
-                                         src={P2}
+                                         src={P8}
                                          width={800}
                                     />
-                                    <h5 className='mt-3 text-center' >React + Bootstrap Приложение с помощью API возвращает погоду в выбранном вами городе.</h5>
-                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/weatherReact'> Репозиторий </a>
+                                    <h5 className='mt-3 text-center' >Деловая таблица на React + Redux, маштабируется до нужных значений и полей, используется для учёта сотрудников или клиентов.</h5>
+                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/BusinessTable'> Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='third'>
                                     <img className='rounded-lg shadow'
@@ -68,7 +77,7 @@ class About extends Component {
                                          src={P4}
                                          width={800}
                                     />
-                                    <h5 className='mt-3 text-center'>Калькулятор калорий на ReactJS. Умеет считать несколько продуктов, суммирует калории, граммы. Алгоритм написан на JS.</h5>
+                                    <h5 className='mt-3 text-center'>Калькулятор калорий на ReactJS. Умеет считать несколько продуктов, суммирует калории, граммы.</h5>
                                     <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/ReactFit'> Репозиторий </a>
                                 </Tab.Pane>
                                 <Tab.Pane eventKey='six' >
@@ -86,6 +95,22 @@ class About extends Component {
                                     />
                                     <h5 className='mt-3 text-center' >React "Помидор" - приложение для тайм менеджмента, с помощью него задачи дробятся по 25 минут и 5 минут отдыха. Сопровождается красивыми аудио и визуальными алертами.</h5>
                                     <a href='https://github.com/itmrgodsend/ReactPomodoro' className="btn btn-outline-primary btn-sm" > Репозиторий </a>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='eight'>
+                                    <img className='rounded-lg shadow'
+                                         src={P2}
+                                         width={800}
+                                    />
+                                    <h5 className='mt-3 text-center' >React + Bootstrap Приложение с помощью API возвращает погоду в выбранном вами городе.</h5>
+                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/weatherReact'> Репозиторий </a>
+                                </Tab.Pane>
+                                <Tab.Pane eventKey='nine'>
+                                    <img className='rounded-lg shadow'
+                                         src={P9}
+                                         width={800}
+                                    />
+                                    <h5 className='mt-3 text-center' >2D игра на чистом JavaScript.</h5>
+                                    <a className="btn btn-outline-primary btn-sm" href='https://github.com/itmrgodsend/BallJS'> Репозиторий </a>
                                 </Tab.Pane>
                             </Tab.Content>
                         </Col>
